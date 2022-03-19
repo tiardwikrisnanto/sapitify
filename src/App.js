@@ -1,22 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+ 
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Sapitify</h1>
+        <h2>{process.env.REACT_APP_CLIENT_ID}</h2>
+        {/* <a href={`${process.env.REACT_APP_AUTH_ENDPOINT}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&response_type=${process.env.REACT_APP_RESPON_TYPE}`}>Login to Sapitify</a> */}
       </header>
     </div>
   );
